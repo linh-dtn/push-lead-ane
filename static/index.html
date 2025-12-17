@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Anh & Em</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Liên hệ tư vấn</h1>
+    <form action="/submit" method="POST">
+        <div class="form-group">
+            <label for="full_name">Họ và Tên *</label>
+            <input type="text" id="full_name" name="full_name" required placeholder="Nguyễn Văn A">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Số điện thoại *</label>
+            <input type="tel" id="mobile" name="mobile" required placeholder="0909...">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="company">Công ty / Phòng khám</label>
+            <input type="text" id="company" name="company">
+        </div>
+
+        <div class="form-group">
+            <label for="00N0o00000M9Lpq">Sản phẩm quan tâm</label>
+            <select id="00N0o00000M9Lpq" name="00N0o00000M9Lpq">
+                <option value="">-- Chọn sản phẩm --</option>
+                <option value="Tay khoan Morita">Tay khoan Morita</option>
+                <option value="Máy Scan Cruxell / XQ Chóp">Máy Scan Cruxell / XQ Chóp</option>
+                <option value="Nội nha TRZX2, ĐVC">Nội nha TRZX2, ĐVC</option>
+                <option value="Máy phẫu thuật Siêu âm Mectron">Máy phẫu thuật Siêu âm Mectron</option>
+                <option value="Tay rung rửa nội nha EndoUltra">Tay rung rửa nội nha EndoUltra</option>
+                <option value="Pink Wave">Pink Wave</option>
+                <option value="Máy hút trung tâm">Máy hút trung tâm</option>
+                <option value="Máy CBCT Morita">Máy CBCT Morita</option>
+                <option value="Máy Pano IC5HD">Máy Pano IC5HD</option>
+                <option value="Ghế nha khoa cao cấp">Ghế nha khoa cao cấp</option>
+                <option value="I do Implant">I do Implant</option>
+                <option value="Trâm files EndoStar">Trâm files EndoStar</option>
+                <option value="Workshop/Webinar">Workshop/Webinar</option>
+                <option value="Tạo kết nối, tư vấn khác">Tạo kết nối, tư vấn khác</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Ghi chú thêm</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+        </div>
+
+        <!-- Hidden inputs from context -->
+        <input type="hidden" name="lead_source" value="Web">
+        <input type="hidden" name="00NBV000000VDf4" value=""> <!-- Salesman -->
+        <input type="hidden" name="00NBV000000Piur" value=""> <!-- Facebook -->
+        <input type="hidden" name="url" value="">
+
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+
+</html>
